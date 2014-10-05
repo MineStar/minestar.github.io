@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Starter Template for Bootstrap 3.2.0</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/roadmap.css">
+</head>
+
+<body>
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="js/vendors/jquery.easings.min.js"></script>
+
+    <!-- Configure the full screen -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#5eafd0', '#a0d0e3'],
+                scrollingSpeed: 400,
+                verticalCentered: true,
+                navigation: true,
+                css3: true
+            });
+        });
+    </script>
+    <!-- The main container -->
+    <div id="fullpage">
+        <!-- First site -->
+        <div class="section" id="overview">
+            <div class="container" id="intro">
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-5 text-center">
+                        <img src="imgs/minestar_logo_64.png">
+                    </div>
+                </div>
+                <!-- Roadmap -->
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4 text-center">
+                        <h1>Roadmap</h1>
+                    </div>
+                </div>
+                <!-- Milestone 1 -->
+                <div class="row">
+                    <div class="col-md-1 text-center m1 ticket-complete">M 1</div>
+                    <div class="col-md-2 col-md-offset-3 text-center ticket-complete"><b>Planung</b>
+                    </div>
+                    <div class="col-md-2 text-center ticket-complete"><b>Plugin Design</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
+                </div>
+                <!-- Milestone 2 -->
+                <div class="row">
+                    <div class="col-md-1 text-center m2">M 2</div>
+                    <div class="col-md-2 col-md-offset-1 text-center ticket-incomplete"><b>ConAir System</b>
+                    </div>
+                    <div class="col-md-2 text-center ticket-incomplete"><b>Permission System?</b>
+                    </div>
+                    <div class="col-md-2 text-center ticket-incomplete"><b>Plugin System</b>
+                    </div>
+                    <div class="col-md-2 text-center ticket-incomplete"><b>SpongeRelease</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
+                </div>
+                <!-- Milestone 3 -->
+                <div class="row">
+                    <div class="col-md-1 text-center m3">M 3</div>
+                    <div class="col-md-2 col-md-offset-1 text-center ticket-incomplete"><b>API Exploration</b>
+                    </div>
+                    <div class="col-md-2 text-center ticket-incomplete"><b>Library/Core Design</b>
+                    </div>
+                    <div class="col-md-2 text-center ticket-incomplete"><b>DevTools</b>
+                    </div>
+                    <div class="col-md-2 text-center ticket-incomplete"><b>Permission/Gruppen</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
+                </div>
+                <!-- Milestone 4 -->
+                <div class="row">
+                    <div class="col-md-1 text-center m4">M 4</div>
+                    <div class="col-md-1 col-md-offset-2 text-center ticket-incomplete"><b>MoneyPit</b>
+                        <br>Truhen</div>
+                    <div class="col-md-1 text-center ticket-incomplete"><b>TheRock</b>
+                        <br>Logging</div>
+                    <div class="col-md-1 text-center ticket-incomplete"><b>AdminStuff</b>
+                        <br>Basics</div>
+                    <div class="col-md-1 text-center ticket-incomplete"><b>Contao</b>
+                    </div>
+                    <div class="col-md-1 text-center ticket-incomplete"><b>GreenMile</b>
+                        <br>WorldProtection</div>
+                    <div class="col-md-1 text-center ticket-incomplete"><b>SinCity</b>
+                        <br>Probe/Grief</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
+                </div>
+                <!-- Milestone 5 -->
+                <div class="row">
+                    <div class="col-md-1 text-center m5">M 5</div>
+                    <div class="col-md-2 col-md-offset-4 text-center ticket-incomplete"><b>TheRock</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
+                </div>
+                <!-- Milestone 6 -->
+                <div class="row">
+                    <div class="col-md-1 text-center m6">M 6</div>
+                    <div class="col-md-2 col-md-offset-3 text-center ticket-incomplete"><b>FifthElement</b>
+                    </div>
+                    <div class="col-md-2 text-center ticket-incomplete"><b>DatVinci</b>
+                        <br>ChatFarben
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
+                </div>
+                <!-- Milestone 7 -->
+                <div class="row">
+                    <div class="col-md-1 text-center m7">M 7</div>
+                    <div class="col-md-2 col-md-offset-1 text-center ticket-incomplete"><b>DatVinci</b><br>Complete
+                    </div>
+                    <div class="col-md-2 text-center ticket-incomplete"><b>FlyZone</b>
+                    </div>
+                    <div class="col-md-2 text-center ticket-incomplete"><b>BuyCraft</b>
+                    </div>
+                    <div class="col-md-2 text-center ticket-incomplete"><b>FB Carts + Basics</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
+                </div>
+                <!-- Milestone 8 -->
+                <div class="row">
+                    <div class="col-md-1 text-center m8">M 8</div>
+                    <div class="col-md-2 col-md-offset-2 text-center ticket-incomplete"><b>FB</b><br>ICs
+                    </div>
+                    <div class="col-md-2 text-center ticket-incomplete"><b>MoneyPit</b><br>Complete
+                    </div>
+                    <div class="col-md-2 text-center ticket-incomplete"><b>ConAir Support</b>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="section">Some section2</div>
+        <div class="section">Some section3</div>
+        <div class="section">Some section4</div>
+    </div>
+</body>
+
+</html>

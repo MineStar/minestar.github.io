@@ -1,0 +1,1 @@
+Simple website based on bootstrap(http://getbootstrap.com/), jquery(http://jquery.com/) and fullpage (http://alvarotrigo.com/fullPage/) to visualize the plugin rewrite progress.
