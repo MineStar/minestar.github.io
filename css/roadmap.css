@@ -9,6 +9,12 @@ li {
 .row span {
     font-size: 20px;
 }
+.milestone {
+    height: 50px;
+    background-color: #fff2ee;
+    border: 1px solid #000;
+    font-size: 32px;
+}
 .ticket {
     height: 50px;
     background-color: #fff2ee;
