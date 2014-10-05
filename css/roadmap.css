@@ -9,63 +9,6 @@ li {
 .row span {
     font-size: 20px;
 }
-.m1 {
-    background-color: #deebf7;
-    border: 1px solid #000;
-    height: 50px;
-    font-size: 32px;
-    color: black;
-    text-shadow: 0 0 2px white;
-}
-.m2 {
-    background-color: #c6dbef;
-    border: 1px solid #000;
-    height: 50px;
-    font-size: 32px;
-    color: black;
-}
-.m3 {
-    background-color: #9ecae1;
-    border: 1px solid #000;
-    height: 50px;
-    font-size: 32px;
-    color: black;
-}
-.m4 {
-    background-color: #6baed6;
-    border: 1px solid #000;
-    height: 50px;
-    font-size: 32px;
-    color: black;
-}
-.m5 {
-    background-color: #4292c6;
-    border: 1px solid #000;
-    height: 50px;
-    font-size: 32px;
-    color: black;
-}
-.m6 {
-    background-color: #2171b5;
-    border: 1px solid #000;
-    height: 50px;
-    font-size: 32px;
-    color: black;
-}
-.m7 {
-    background-color: #08519c;
-    border: 1px solid #000;
-    height: 50px;
-    font-size: 32px;
-    color: black;
-}
-.m8 {
-    background-color: #08306b;
-    border: 1px solid #000;
-    height: 50px;
-    font-size: 32px;
-    color: black;
-}
 .ticket {
     height: 50px;
     background-color: #fff2ee;
