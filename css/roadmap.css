@@ -70,7 +70,6 @@ li {
     height: 50px;
     background-color: #fff2ee;
     border: 1px solid #000;
-    cursor: pointer;
 }
 .section {
     background: #a0d0e3;
@@ -82,6 +81,7 @@ li {
 div[class*='btn-'] {
     color: #222;
     text-shadow: none;
+    cursor: pointer;
 }
 a,
 a:hover {
