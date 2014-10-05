@@ -25,150 +25,737 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#fullpage').fullpage({
-                sectionsColor: ['#5eafd0', '#a0d0e3'],
+                anchors: ['overview', 'firstMile', 'secondMile', 'thirdMile', '4thMile', '5thMile', '6thMile', '7thMile', '8thMile'],
+                navigationTooltips: ['Roadmap', 'Tools', 'Vorbereitung', 'Laufender Server', 'Primärer Komfort', 'Sekundärer Komfort', 'Minestar 2.0'],
                 scrollingSpeed: 400,
                 verticalCentered: true,
                 navigation: true,
-                css3: true
+                slidesNavigation: true,
+                css3: true,
+                loopHorizontal: false
             });
         });
     </script>
     <!-- The main container -->
+
     <div id="fullpage">
-        <!-- First site -->
-        <div class="section" id="overview">
+        <!-- Overview -->
+        <div class="section active">
             <div class="container" id="intro">
                 <div class="row">
                     <div class="col-md-2 col-md-offset-5 text-center">
                         <img src="imgs/minestar_logo_64.png">
                     </div>
                 </div>
+
                 <!-- Roadmap -->
                 <div class="row">
                     <div class="col-md-4 col-md-offset-4 text-center">
                         <h1>Roadmap</h1>
                     </div>
                 </div>
+
                 <!-- Milestone 1 -->
                 <div class="row">
-                    <div class="col-md-1 text-center m1 ticket-complete">M 1</div>
-                    <div class="col-md-2 col-md-offset-3 text-center ticket-complete"><b>Planung</b>
+                    <div onclick="location.href='#firstMile'" class="col-md-1 text-center m1 btn-success">M1
                     </div>
-                    <div class="col-md-2 text-center ticket-complete"><b>Plugin Design</b>
+                    <div onclick="location.href='#firstMile/1'" class="col-md-2 col-md-offset-3 text-center ticket btn-success"><b>Projekt Planung</b>
+                    </div>
+                    <div onclick="location.href='#firstMile/2'" class="col-md-2 text-center ticket btn-success"><b>Plugin Design</b>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row arrow">
                     <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
+                    <div class="col-md-2 col-md-offset-4 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
                     </div>
                 </div>
                 <!-- Milestone 2 -->
                 <div class="row">
-                    <div class="col-md-1 text-center m2">M 2</div>
-                    <div class="col-md-2 col-md-offset-1 text-center ticket-incomplete"><b>ConAir System</b>
+                    <div onclick="location.href='#secondMile'" class="col-md-1 text-center m2 btn-warning">M 2</div>
+                    <div onclick="location.href='#secondMile/1'" class="col-md-2 col-md-offset-1 text-center ticket btn-success"><b>ConAir System</b>
                     </div>
-                    <div class="col-md-2 text-center ticket-incomplete"><b>Permission System?</b>
+                    <div onclick="location.href='#secondMile/2'" class="col-md-2 text-center ticket btn-info"><b>Permission System?</b>
                     </div>
-                    <div class="col-md-2 text-center ticket-incomplete"><b>Plugin System</b>
+                    <div onclick="location.href='#secondMile/3'" class="col-md-2 text-center ticket btn-warning"><b>Modul System</b>
                     </div>
-                    <div class="col-md-2 text-center ticket-incomplete"><b>SpongeRelease</b>
+                    <div onclick="location.href='#secondMile/4'" class="col-md-2 text-center ticket btn-warning"><b>API Release</b>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
                     </div>
+                    <div class="col-md-2 col-md-offset-4 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
                 </div>
+
                 <!-- Milestone 3 -->
                 <div class="row">
-                    <div class="col-md-1 text-center m3">M 3</div>
-                    <div class="col-md-2 col-md-offset-1 text-center ticket-incomplete"><b>API Exploration</b>
+                    <div onclick="location.href='#thirdMile'" class="col-md-1 text-center m3 btn-warning">M 3</div>
+                    <div onclick="location.href='#thirdMile/1'" class="col-md-2 col-md-offset-1 text-center ticket btn-warning"><b>API Exploration</b>
                     </div>
-                    <div class="col-md-2 text-center ticket-incomplete"><b>Library/Core Design</b>
+                    <div onclick="location.href='#thirdMile/2'" class="col-md-2 text-center ticket btn-warning"><b>Library/Core Design</b>
                     </div>
-                    <div class="col-md-2 text-center ticket-incomplete"><b>DevTools</b>
+                    <div onclick="location.href='#thirdMile/3'" class="col-md-2 text-center ticket btn-warning"><b>DevTools</b>
                     </div>
-                    <div class="col-md-2 text-center ticket-incomplete"><b>Permission/Gruppen</b>
+                    <div onclick="location.href='#thirdMile/4'" class="col-md-2 text-center ticket btn-warning"><b>Permission/Gruppen</b>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
                     </div>
+                    <div class="col-md-2 col-md-offset-4 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
                 </div>
+
                 <!-- Milestone 4 -->
                 <div class="row">
-                    <div class="col-md-1 text-center m4">M 4</div>
-                    <div class="col-md-1 col-md-offset-2 text-center ticket-incomplete"><b>MoneyPit</b>
+                    <div onclick="location.href='#4thMile'" class="col-md-1 text-center m4 btn-warning">M 4</div>
+                    <div onclick="location.href='#4thMile/1'" class="col-md-1 col-md-offset-2 text-center ticket btn-warning"><b>MoneyPit</b>
                         <br>Truhen</div>
-                    <div class="col-md-1 text-center ticket-incomplete"><b>TheRock</b>
+                    <div onclick="location.href='#4thMile/2'" class="col-md-1 text-center ticket btn-warning"><b>TheRock</b>
                         <br>Logging</div>
-                    <div class="col-md-1 text-center ticket-incomplete"><b>AdminStuff</b>
+                    <div onclick="location.href='#4thMile/3'" class="col-md-1 text-center ticket btn-warning"><b>AdminStuff</b>
                         <br>Basics</div>
-                    <div class="col-md-1 text-center ticket-incomplete"><b>Contao</b>
+                    <div onclick="location.href='#4thMile/4'" class="col-md-1 text-center ticket btn-warning"><b>Contao</b>
                     </div>
-                    <div class="col-md-1 text-center ticket-incomplete"><b>GreenMile</b>
+                    <div onclick="location.href='#4thMile/5'" class="col-md-1 text-center ticket btn-warning"><b>GreenMile</b>
                         <br>WorldProtection</div>
-                    <div class="col-md-1 text-center ticket-incomplete"><b>SinCity</b>
+                    <div onclick="location.href='#4thMile/6'" class="col-md-1 text-center ticket btn-warning"><b>SinCity</b>
                         <br>Probe/Grief</div>
                 </div>
                 <div class="row">
                     <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
                     </div>
+                    <div class="col-md-2 col-md-offset-4 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
                 </div>
+
                 <!-- Milestone 5 -->
                 <div class="row">
-                    <div class="col-md-1 text-center m5">M 5</div>
-                    <div class="col-md-2 col-md-offset-4 text-center ticket-incomplete"><b>TheRock</b>
+                    <div onclick="location.href='#5thMile'" class="col-md-1 text-center m5 btn-warning btn-warning">M 5</div>
+                    <div onclick="location.href='#5thMile/1'" class="col-md-2 col-md-offset-2 text-center ticket btn-warning"><b>TheRock</b>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
+                    <div onclick="location.href='#5thMile/2'" class="col-md-2 text-center ticket btn-warning"><b>FifthElement</b>
                     </div>
-                </div>
-                <!-- Milestone 6 -->
-                <div class="row">
-                    <div class="col-md-1 text-center m6">M 6</div>
-                    <div class="col-md-2 col-md-offset-3 text-center ticket-incomplete"><b>FifthElement</b>
-                    </div>
-                    <div class="col-md-2 text-center ticket-incomplete"><b>DatVinci</b>
+                    <div onclick="location.href='#5thMile/3'" class="col-md-2 text-center ticket btn-warning"><b>DatVinci</b>
                         <br>ChatFarben
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
                     </div>
+                    <div class="col-md-2 col-md-offset-4 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
                 </div>
-                <!-- Milestone 7 -->
+
+                <!-- Milestone 6 -->
                 <div class="row">
-                    <div class="col-md-1 text-center m7">M 7</div>
-                    <div class="col-md-2 col-md-offset-1 text-center ticket-incomplete"><b>DatVinci</b><br>Complete
+                    <div onclick="location.href='#6thMile'" class="col-md-1 text-center m6 btn-warning">M 6</div>
+                    <div class="col-md-2 col-md-offset-1 text-center ticket btn-warning"><b>DatVinci</b>
+                        <br>Complete
                     </div>
-                    <div class="col-md-2 text-center ticket-incomplete"><b>FlyZone</b>
+                    <div onclick="location.href='#6thMile/1'" class="col-md-2 text-center ticket btn-warning"><b>FlyZone</b>
                     </div>
-                    <div class="col-md-2 text-center ticket-incomplete"><b>BuyCraft</b>
+                    <div onclick="location.href='#6thMile/2'" class="col-md-2 text-center ticket btn-warning"><b>BuyCraft</b>
                     </div>
-                    <div class="col-md-2 text-center ticket-incomplete"><b>FB Carts + Basics</b>
+                    <div onclick="location.href='#6thMile/3'" class="col-md-2 text-center ticket btn-warning"><b>FB Carts + Basics</b>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
                     </div>
+                    <div class="col-md-2 col-md-offset-4 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
+                    </div>
                 </div>
-                <!-- Milestone 8 -->
+
+                <!-- Milestone 7 -->
                 <div class="row">
-                    <div class="col-md-1 text-center m8">M 8</div>
-                    <div class="col-md-2 col-md-offset-2 text-center ticket-incomplete"><b>FB</b><br>ICs
+                    <div onclick="location.href='#7thMile'" class="col-md-1 text-center m7 btn-warning btn-warning">M 7</div>
+                    <div onclick="location.href='#7thMile/1'" class="col-md-2 col-md-offset-2 text-center ticket btn-warning"><b>FB</b>
+                        <br>ICs
                     </div>
-                    <div class="col-md-2 text-center ticket-incomplete"><b>MoneyPit</b><br>Complete
+                    <div onclick="location.href='#7thMile/2'" class="col-md-2 text-center ticket btn-warning"><b>MoneyPit</b>
+                        <br>Complete
                     </div>
-                    <div class="col-md-2 text-center ticket-incomplete"><b>ConAir Support</b>
+                    <div onclick="location.href='#7thMile/3'" class="col-md-2 text-center ticket btn-warning"><b>ConAir Support</b>
                     </div>
                 </div>
             </div>
-
-
         </div>
-        <div class="section">Some section2</div>
-        <div class="section">Some section3</div>
-        <div class="section">Some section4</div>
+
+        <!-- First milestone -->
+        <div class="section">
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-success">Erfüllt</span> Milestone 1 - <small>Planung</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Ziel dieses Milestone ist die Vorbereitung und allgemeine Planung wie z.B. das Erstellen dieses Projektplanes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-success">Erfüllt</span> Projektplanung</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul>
+                                <li>Erfassung von Funktionalitäten</li>
+                                <li>Erstellen eines Projektplanes</li>
+                                <li>Informieren der Community über Arbeitsweise</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-success">Erfüllt</span> Plugin Design</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul>
+                                <li>Erstellen eines Abhängigkeitengraph der Plugins
+                                    <img src="imgs/image03.png" class="img-responsive" alt="plugin dependency graph">
+                                </li>
+                                <li>Aufteilung der einzelnen Funktionalitäten</li>
+                                <li>Informieren der Community über Arbeitsweise</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second milestone -->
+        <div class="section">
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> Milestone 2 - <small>Tools</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Ziel dieses Milestones ist die Erstellung von Tools und Libraries, die unabhängig von dem Plugin API entwickelt werden können. Diese können dann von den Plugins integriert werden und durch die vorläufige Entwicklung wird eine höhere Stabilität erreicht.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-success">Erfüllt</span> ConAir System</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Das ConAir System bietet eine Schnitstelle an, damit Plugins serverübergreifend kommunizieren können. So kann z.B. der Chat synchronisiert werden und Kommandos von einem Server auf einem anderem Server abgesetzt werden. Durch das neue ConAir System kann auch eine Website in das Netzwerk eingebunden werden, um so Admins eine einfachere Kontrolle zu ermöglichen.
+                            </p>
+                            <p>
+                                <span class="label label-danger">Wichtig!</span>
+                            </p>
+                            <p>
+                                Eine Implementierung der serverübergreifenden Kommunikation sowie die angesprochene Website wird erst in späteren Milestones behandelt.
+
+                                <img src="imgs/conairnetwork.png" class="img-responsive" alt="plugin dependency graph">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-info">Idee</span> Permission System</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Ein Permissionsystem ist unablässig für die Benutzung der Plugins. Es muss geregelt sein, dass nur bestimmte Nutzergruppe bestimmte Befehle ausführen dürfen. So sollen beispielsweise nur Administratoren User bannen können, aber alle User Warp Befehle benutzen können.
+                            </p>
+                            <p>
+                                Das Label <span class="label label-info">Idee</span> wurde verwendet, da es von dem API abhängig ist, ob ein eigenes Permission System entwickelt wird oder ein bestehendes übernommen wird.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> Modul System</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Plugins wie z.B. MoneyPit oder FalseBook können modular aufgebaut werden. Es wird ein Kern entwickelt, an dem sich weitere Module andocken. Beispielsweise würde MoneyPit nur die Registrierung von Blöcken vornehmen, die Behandlung des Schutzes aber an das jeweile Modul weiterleiten. Dadurch können neue Blöcke und Mechanismen einfacher hinzugefügt werden.
+                            </p>
+                            <p>
+                                Das Plugin System muss definitiv ein automatisches Laden und Entladen von Modulen ermöglichen, damit während der Laufzeit Updates des Systems gefahren werden können.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> API Release</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Ohne ein Release einer Plugin API ist dieser Milestone unvollständig.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third milestone -->
+        <div class="section">
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning ">In Arbeit</span> Milestone 3 - <small>Vorbereitung</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Ziel dieses Milestones ist die Anpassung des Projektplanes an die Gegenheiten des API. Dadurch wird das API begutachtet und je nach Funktionalitäten der MinestarCore designed. Desweiteren werden Tools zur Entwicklung wie Maven, Jenkins oder sonstige eingerichtet, um eine Abarbeitung des Planes zu vereinfachen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> API Exploration</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> Core Design</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> Dev Tools</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> Permission/Gruppen</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4th milestone -->
+        <div class="section">
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning ">In Arbeit</span> Milestone 4 - <small>Laufender Server</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Ziel dieses Milestones ist die Erstellung einer Pluginsammlung, um einen minimalen Betrieb des Servers zu ermöglichen. Erleichterungen wie teleportiere oder verbessertes Chatten werden nicht berücksichtigt, der Milestone konzentriert sich auf ein möglichst Grieffreies Spielen und ein Verwalten von Spielern.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> MoneyPit <small>Truhen</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> TheRock <small>Loggen</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> AdminStruff <small>Basics</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> Contao</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> GreenMile<small>WorldProtection</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> SinCity <small>Probe/Grief</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5th milestone -->
+        <div class="section">
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning ">In Arbeit</span> Milestone 5 - <small>Primärer Komfort</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                In diesem Milestone werden einfache Komfortmethoden eingebaut, die für einen laufenden Server nicht zwingend notwendig waren. Ab diesem Milestone werden diese Stück für Stück eingebaut, um den alten Stand der Technik zu erreichen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> The Rock <small>Complete</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> FifthElement</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> DatVinci <small>ChatFarben</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6th milestone -->
+        <div class="section">
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning ">In Arbeit</span> Milestone 6 - <small>Sekundärer Komformt</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Ziel dieses Milestone ist die Bereitstellung weiterer Komfortfunktionen wie das Fliegen oder das Handeln via Buycraft.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> DatVinci <small>Complete</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> FlyZone</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> BuyCraft</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> FB Charts + Basics</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7th milestone -->
+        <div class="section">
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning ">In Arbeit</span> Milestone 7 - <small>Minestar 2.0</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Ziel dieses Milestone ist das Erreichen des alten Technikstandes auf Basis des Bukkit API. Ein Unterziel des Milestone ist der Support vom ConAir Netzwerk.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> FB <small>ICs</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> MoneyPit <small>Complete</small></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><span class="label label-warning">In Arbeit</span> ConAir Support</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Platzhalter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 
