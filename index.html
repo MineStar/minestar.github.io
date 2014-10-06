@@ -25,19 +25,34 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#fullpage').fullpage({
-                anchors: ['overview', 'firstMile', 'secondMile', 'thirdMile', '4thMile', '5thMile', '6thMile', '7thMile', '8thMile'],
-                navigationTooltips: ['Roadmap', 'Planung', 'Tools', 'Vorbereitung', 'Laufender Server', 'Primärer Komfort', 'Sekundärer Komfort', 'Minestar 2.0'],
-                scrollingSpeed: 400,
+                anchors: ['overview', 'firstMile', 'secondMile', 'thirdMile', '4thMile', '5thMile', '6thMile', '7thMile'],
+                scrollingSpeed: 200,
                 verticalCentered: true,
-                navigation: true,
                 slidesNavigation: true,
                 css3: true,
                 loopHorizontal: false
             });
         });
     </script>
+    <ul id="menu">
+        <li data-menuanchor="overview"><a href="#overview">Overview</a>
+        </li>
+        <li data-menuanchor="firstMile"><a href="#firstMile">M 1</a>
+        </li>
+        <li data-menuanchor="secondMile"><a href="#secondMile">M 2</a>
+        </li>
+        <li data-menuanchor="thirdMile"><a href="#thirdMile">M 3</a>
+        </li>
+        <li data-menuanchor="4thMile"><a href="#4thMile">M 4</a>
+        </li>
+        <li data-menuanchor="5thMile"><a href="#5thMile">M 5</a>
+        </li>
+        <li data-menuanchor="6thMile"><a href="#6thMile">M 6</a>
+        </li>
+        <li data-menuanchor="7thMile"><a href="#7thMile">M 7</a>
+        </li>
+    </ul>
     <!-- The main container -->
-
     <div id="fullpage">
         <!-- Overview -->
         <div class="section active">
@@ -57,11 +72,11 @@
 
                 <!-- Milestone 1 -->
                 <div class="row">
-                    <div onclick="location.href='#firstMile'" class="col-md-1 text-center milestone btn-success">M 1</div>
-                    <div onclick="location.href='#firstMile/1'" class="col-md-2 col-md-offset-3 text-center ticket btn-success"><b>Projekt Planung</b>
-                    </div>
-                    <div onclick="location.href='#firstMile/2'" class="col-md-2 text-center ticket btn-success"><b>Plugin Design</b>
-                    </div>
+                    <button onclick="location.href='#firstMile'" class="col-md-1 milestone btn-success">M 1</button>
+                    <button onclick="location.href='#firstMile/1'" class="col-md-2 col-md-offset-3 ticket btn-success"><b>Projekt Planung</b>
+                    </button>
+                    <button onclick="location.href='#firstMile/2'" class="col-md-2 ticket btn-success"><b>Plugin Design</b>
+                    </button>
                 </div>
                 <div class="row arrow">
                     <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
@@ -71,15 +86,15 @@
                 </div>
                 <!-- Milestone 2 -->
                 <div class="row">
-                    <div onclick="location.href='#secondMile'" class="col-md-1 text-center milestone btn-warning">M 2</div>
-                    <div onclick="location.href='#secondMile/1'" class="col-md-2 col-md-offset-1 text-center ticket btn-success"><b>ConAir System</b>
-                    </div>
-                    <div onclick="location.href='#secondMile/2'" class="col-md-2 text-center ticket btn-info"><b>Permission System?</b>
-                    </div>
-                    <div onclick="location.href='#secondMile/3'" class="col-md-2 text-center ticket btn-warning"><b>Modul System</b>
-                    </div>
-                    <div onclick="location.href='#secondMile/4'" class="col-md-2 text-center ticket btn-warning"><b>API Release</b>
-                    </div>
+                    <button onclick="location.href='#secondMile'" class="col-md-1 milestone btn-warning">M 2</button>
+                    <button onclick="location.href='#secondMile/1'" class="col-md-2 col-md-offset-1 ticket btn-success"><b>ConAir System</b>
+                    </button>
+                    <button onclick="location.href='#secondMile/2'" class="col-md-2 ticket btn-info"><b>Permission System?</b>
+                    </button>
+                    <button onclick="location.href='#secondMile/3'" class="col-md-2 ticket btn-warning"><b>Modul System</b>
+                    </button>
+                    <button onclick="location.href='#secondMile/4'" class="col-md-2 ticket btn-warning"><b>API Release</b>
+                    </button>
                 </div>
                 <div class="row">
                     <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
@@ -90,16 +105,16 @@
 
                 <!-- Milestone 3 -->
                 <div class="row">
-                    <div onclick="location.href='#thirdMile'" class="col-md-1 text-center milestone btn-warning">M 3</div>
-                    <div onclick="location.href='#thirdMile/1'" class="col-md-2 col-md-offset-1 text-center ticket btn-warning"><b>API Exploration</b>
-                    </div>
-                    <div onclick="location.href='#thirdMile/2'" class="col-md-2 text-center ticket btn-warning"><b>Library/Core Design</b>
-                    </div>
-                    <div onclick="location.href='#thirdMile/3'" class="col-md-2 text-center ticket btn-warning"><b>DevTools</b> 
+                    <button onclick="location.href='#thirdMile'" class="col-md-1 milestone btn-danger">M 3</button>
+                    <button onclick="location.href='#thirdMile/1'" class="col-md-2 col-md-offset-1 ticket btn-danger"><b>API Exploration</b>
+                    </button>
+                    <button onclick="location.href='#thirdMile/2'" class="col-md-2 ticket btn-danger"><b>Library/Core Design</b>
+                    </button>
+                    <button onclick="location.href='#thirdMile/3'" class="col-md-2 ticket btn-danger"><b>DevTools</b> 
                         <br>Einrichten
-                    </div>
-                    <div onclick="location.href='#thirdMile/4'" class="col-md-2 text-center ticket btn-warning"><b>Permission/Gruppen</b>
-                    </div>
+                    </button>
+                    <button onclick="location.href='#thirdMile/4'" class="col-md-2 ticket btn-danger"><b>Permission/Gruppen</b>
+                    </button>
                 </div>
                 <div class="row">
                     <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
@@ -110,19 +125,19 @@
 
                 <!-- Milestone 4 -->
                 <div class="row">
-                    <div onclick="location.href='#4thMile'" class="col-md-1 text-center milestone btn-warning">M 4</div>
-                    <div onclick="location.href='#4thMile/1'" class="col-md-1 col-md-offset-2 text-center ticket btn-warning"><b>MoneyPit</b>
-                        <br>Basics</div>
-                    <div onclick="location.href='#4thMile/2'" class="col-md-1 text-center ticket btn-warning"><b>TheRock</b>
-                        <br>Logging</div>
-                    <div onclick="location.href='#4thMile/3'" class="col-md-1 text-center ticket btn-warning"><b>AdminStuff</b>
-                        <br>Basics</div>
-                    <div onclick="location.href='#4thMile/4'" class="col-md-1 text-center ticket btn-warning"><b>Contao</b>
-                    </div>
-                    <div onclick="location.href='#4thMile/5'" class="col-md-1 text-center ticket btn-warning"><b>GreenMile</b>
-                        <br>WorldProtection</div>
-                    <div onclick="location.href='#4thMile/6'" class="col-md-1 text-center ticket btn-warning"><b>SinCity</b>
-                        <br>Probe/Grief</div>
+                    <button onclick="location.href='#4thMile'" class="col-md-1 milestone btn-danger">M 4</button>
+                    <button onclick="location.href='#4thMile/1'" class="col-md-1 col-md-offset-2 ticket btn-danger"><b>MoneyPit</b>
+                        <br>Basics</button>
+                    <button onclick="location.href='#4thMile/2'" class="col-md-1 ticket btn-danger"><b>TheRock</b>
+                        <br>Logging</button>
+                    <button onclick="location.href='#4thMile/3'" class="col-md-1 ticket btn-danger"><b>AdminStuff</b>
+                        <br>Basics</button>
+                    <button onclick="location.href='#4thMile/4'" class="col-md-1 ticket btn-danger"><b>Contao</b>
+                    </button>
+                    <button onclick="location.href='#4thMile/5'" class="col-md-1 ticket btn-danger"><b>GreenMile</b>
+                        <br>Basics</button>
+                    <button onclick="location.href='#4thMile/6'" class="col-md-1 ticket btn-danger"><b>SinCity</b>
+                        <br>Probe/Grief</button>
                 </div>
                 <div class="row">
                     <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
@@ -133,18 +148,18 @@
 
                 <!-- Milestone 5 -->
                 <div class="row">
-                    <div onclick="location.href='#5thMile'" class="col-md-1 text-center milestone btn-warning btn-warning">M 5</div>
-                    <div onclick="location.href='#5thMile/1'" class="col-md-2 col-md-offset-1 text-center ticket btn-warning"><b>TheRock</b>
+                    <button onclick="location.href='#5thMile'" class="col-md-1 milestone btn-danger">M 5</button>
+                    <button onclick="location.href='#5thMile/1'" class="col-md-2 col-md-offset-1 ticket btn-danger"><b>TheRock</b>
                         <br>Complete
-                    </div>
-                    <div onclick="location.href='#5thMile/2'" class="col-md-2 text-center ticket btn-warning"><b>FifthElement</b>
-                    </div>
-                    <div onclick="location.href='#6thMile/3'" class="col-md-2 text-center ticket btn-warning"><b>BuyCraft</b>
+                    </button>
+                    <button onclick="location.href='#5thMile/2'" class="col-md-2 ticket btn-danger"><b>FifthElement</b>
+                    </button>
+                    <button onclick="location.href='#6thMile/3'" class="col-md-2 ticket btn-danger"><b>BuyCraft</b>
                         <br>ServerShop
-                    </div>
-                    <div onclick="location.href='#5thMile/4'" class="col-md-2 text-center ticket btn-warning"><b>DatVinci</b>
+                    </button>
+                    <button onclick="location.href='#5thMile/4'" class="col-md-2 ticket btn-danger"><b>DatVinci</b>
                         <br>ChatFarben
-                    </div>
+                    </button>
                 </div>
                 <div class="row">
                     <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
@@ -155,21 +170,21 @@
 
                 <!-- Milestone 6 -->
                 <div class="row">
-                    <div onclick="location.href='#6thMile'" class="col-md-1 text-center milestone btn-warning">M 6</div>
-                    <div onclick="location.href='#6thMile/1'" class="col-md-1 col-md-offset-2 text-center ticket btn-warning"><b>DatVinci</b>
+                    <button onclick="location.href='#6thMile'" class="col-md-1 milestone btn-danger">M 6</button>
+                    <button onclick="location.href='#6thMile/1'" class="col-md-1 col-md-offset-2 ticket btn-danger"><b>DatVinci</b>
                         <br>Complete
-                    </div>
-                    <div onclick="location.href='#6thMile/2'" class="col-md-1 text-center ticket btn-warning"><b>FlyZone</b>
-                    </div>
-                    <div onclick="location.href='#6thMile/3'" class="col-md-2 text-center ticket btn-warning"><b>FB</b>
+                    </button>
+                    <button onclick="location.href='#6thMile/2'" class="col-md-1 ticket btn-danger"><b>FlyZone</b>
+                    </button>
+                    <button onclick="location.href='#6thMile/3'" class="col-md-2 ticket btn-danger"><b>FB</b>
                         <br>Carts + Basics
-                    </div>
-                    <div onclick="location.href='#6thMile/4'" class="col-md-1 text-center ticket btn-warning"><b>BuyCraft</b>
+                    </button>
+                    <button onclick="location.href='#6thMile/4'" class="col-md-1 ticket btn-danger"><b>BuyCraft</b>
                         <br>Complete
-                    </div>
-                    <div onclick="location.href='#7thMile/5'" class="col-md-1 text-center ticket btn-warning"><b>MoneyPit</b>
+                    </button>
+                    <button onclick="location.href='#7thMile/5'" class="col-md-1 ticket btn-danger"><b>MoneyPit</b>
                         <br>Complete
-                    </div>
+                    </button>
                 </div>
                 <div class="row">
                     <div class="col-md-1 text-center arrow"><span class="glyphicon glyphicon-arrow-down"></span>
@@ -180,14 +195,14 @@
 
                 <!-- Milestone 7 -->
                 <div class="row">
-                    <div onclick="location.href='#7thMile'" class="col-md-1 text-center milestone btn-warning btn-warning">M 7</div>
-                    <div onclick="location.href='#7thMile/1'" class="col-md-2 col-md-offset-2 text-center ticket btn-warning"><b>FB</b>
+                    <button onclick="location.href='#7thMile'" class="col-md-1 milestone btn-danger">M 7</button>
+                    <button onclick="location.href='#7thMile/1'" class="col-md-2 col-md-offset-2 ticket btn-danger"><b>FB</b>
                         <br>ICs
-                    </div>
-                    <div onclick="location.href='#7thMile/2'" class="col-md-2 text-center ticket btn-warning"><b>ConAir Support</b>
-                    </div>
-                    <div onclick="location.href='#7thMile/3'" class="col-md-2 text-center ticket btn-warning"><b>Illuminati</b>
-                    </div>
+                    </button>
+                    <button onclick="location.href='#7thMile/2'" class="col-md-2 ticket btn-danger"><b>ConAir Support</b>
+                    </button>
+                    <button onclick="location.href='#7thMile/3'" class="col-md-2 ticket btn-danger"><b>Illuminati</b>
+                    </button>
                 </div>
             </div>
         </div>
@@ -351,7 +366,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning ">In Arbeit</span> Milestone 3 - <small>Vorbereitung</small></h1>
+                            <h1><span class="label label-danger ">In Arbeit</span> Milestone 3 - <small>Vorbereitung</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -366,7 +381,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> API Exploration</h1>
+                            <h1><span class="label label-danger">In Arbeit</span> API Exploration</h1>
                         </div>
                     </div>
                     <div class="row">
@@ -382,7 +397,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> Core Design</h1>
+                            <h1><span class="label label-danger">In Arbeit</span> Core Design</h1>
                         </div>
                     </div>
                     <div class="row">
@@ -398,7 +413,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> DevTools <small>Einrichten</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> DevTools <small>Einrichten</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -414,7 +429,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> Permission/Gruppen</h1>
+                            <h1><span class="label label-danger">In Arbeit</span> Permission/Gruppen</h1>
                         </div>
                     </div>
                     <div class="row">
@@ -434,7 +449,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning ">In Arbeit</span> Milestone 4 - <small>Laufender Server</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> Milestone 4 - <small>Laufender Server</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -450,7 +465,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> MoneyPit <small>Truhen</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> MoneyPit <small>Truhen</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -466,7 +481,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> TheRock <small>Loggen</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> TheRock <small>Loggen</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -482,7 +497,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> AdminStuff <small>Basics</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> AdminStuff <small>Basics</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -498,7 +513,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> Contao</h1>
+                            <h1><span class="label label-danger">In Arbeit</span> Contao</h1>
                         </div>
                     </div>
                     <div class="row">
@@ -514,7 +529,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> GreenMile <small>WorldProtection</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> GreenMile <small>WorldProtection</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -530,7 +545,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> SinCity <small>Probe/Grief</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> SinCity <small>Probe/Grief</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -550,7 +565,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning ">In Arbeit</span> Milestone 5 - <small>Primärer Komfort</small></h1>
+                            <h1><span class="label label-danger ">In Arbeit</span> Milestone 5 - <small>Primärer Komfort</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -566,7 +581,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> The Rock <small>Complete</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> The Rock <small>Complete</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -582,7 +597,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> FifthElement</h1>
+                            <h1><span class="label label-danger">In Arbeit</span> FifthElement</h1>
                         </div>
                     </div>
                     <div class="row">
@@ -598,7 +613,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> BuyCraft <small>Servershop</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> BuyCraft <small>Servershop</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -614,7 +629,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> DatVinci <small>ChatFarben</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> DatVinci <small>ChatFarben</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -634,7 +649,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning ">In Arbeit</span> Milestone 6 - <small>Sekundärer Komformt</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> Milestone 6 - <small>Sekundärer Komformt</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -650,7 +665,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> DatVinci <small>Complete</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> DatVinci <small>Complete</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -666,7 +681,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> FlyZone</h1>
+                            <h1><span class="label label-danger">In Arbeit</span> FlyZone</h1>
                         </div>
                     </div>
                     <div class="row">
@@ -682,7 +697,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> FB <small>Carts + Basics</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> FB <small>Carts + Basics</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -698,7 +713,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> BuyCraft <small>Complete</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> BuyCraft <small>Complete</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -714,7 +729,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> Moneypit <small>Complete</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> Moneypit <small>Complete</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -734,7 +749,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning ">In Arbeit</span> Milestone 7 - <small>Minestar 2.0</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> Milestone 7 - <small>Minestar 2.0</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -750,7 +765,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> FB <small>ICs</small></h1>
+                            <h1><span class="label label-danger">In Arbeit</span> FB <small>ICs</small></h1>
                         </div>
                     </div>
                     <div class="row">
@@ -766,7 +781,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> ConAir Support</h1>
+                            <h1><span class="label label-danger">In Arbeit</span> ConAir Support</h1>
                         </div>
                     </div>
                     <div class="row">
@@ -782,7 +797,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><span class="label label-warning">In Arbeit</span> Illuminati</h1>
+                            <h1><span class="label label-danger">In Arbeit</span> Illuminati</h1>
                         </div>
                     </div>
                     <div class="row">
